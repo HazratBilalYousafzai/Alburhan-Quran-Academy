@@ -1,0 +1,48 @@
+/* ==================== messages ==================== */
+.adminContainer {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 10rem 10rem;
+}
+
+.add-btn {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2rem;
+}
+
+.add-btn .btn {
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    font-size: 1.5rem;
+    background-color: #0D6EFD;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+/* states  */
+
+.add-btn .btn:hover {
+    background-color: #3471ce;
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+}
+
+@media (width <=730px) {
+    .add-btn .btn {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .adminContainer {
+        max-width: 142rem;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+}
+
+/* ==================== end messages ==================== */

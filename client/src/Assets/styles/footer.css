@@ -1,0 +1,99 @@
+footer {
+    background-color: var(--footer-bg-color);
+}
+
+footer * {
+    color: var(--white-color);
+}
+
+footer .grid {
+    display: grid;
+
+
+}
+
+.grid-three--cols {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer li a {
+    text-transform: capitalize;
+}
+
+footer li a:hover {
+    color: rgb(153, 151, 155);
+}
+
+.footer-subheading {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.footer-1--div p {
+    margin: 1rem 0 3.2rem 0;
+}
+
+.footer-1--div {
+    text-align: left;
+
+    & .social-footer--icons {
+        display: flex;
+        gap: 2.4rem;
+
+        & .fa-brands {
+            width: 5rem;
+            aspect-ratio: 1;
+            background-color: var(--supporting-color);
+            color: var(--bnt-hover-bg-color);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s linear;
+
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+
+            &:hover {
+                color: var(--supporting-color);
+                background-color: var(--bnt-hover-bg-color);
+                rotate: 360deg;
+            }
+        }
+    }
+}
+
+@media (width <=944px) {
+    footer .grid-three--cols {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    & .footer-2--div {
+        grid-area: 1/1/2/2;
+    }
+
+    & .footer-3--div {
+        grid-area: 1/2/2/3;
+    }
+}
+
+@media (width <=615px) {
+    footer .grid-three--cols {
+        grid-template-columns: 1fr;
+    }
+
+    & .footer-2--div {
+        grid-area: 1/1/2/2;
+    }
+
+    & .footer-3--div {
+        grid-area: 2/1/3/2;
+    }
+}

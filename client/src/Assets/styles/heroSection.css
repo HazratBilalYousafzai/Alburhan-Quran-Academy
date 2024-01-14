@@ -1,0 +1,65 @@
+.carousel-inner {
+    max-height: 85vh;
+    margin-top: 9rem;
+}
+
+.carousel-inner .carousel-item .text-field {
+    top: 30%;
+    animation-duration: 1s;
+    animation-name: text-float;
+}
+
+@keyframes text-float {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 30%;
+    }
+}
+
+.carousel-inner .carousel-item .text-field h5 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.carousel-inner .carousel-item .text-field p {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+@media (width <=910px) {
+
+    .Slide {
+        display: none;
+    }
+
+    .carousel-inner img {
+        height: 40vh;
+    }
+
+}
+
+@media (width <=850px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (width <=730px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (width <=576px) {
+    html {
+        font-size: 40%;
+    }
+
+}

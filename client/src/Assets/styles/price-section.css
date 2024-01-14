@@ -1,0 +1,168 @@
+.pricing-section {
+    margin-top: 8rem;
+}
+
+.price-container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 10rem 10rem;
+
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3--cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    height: 40rem;
+    background-color: #e9e8e8;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card .title {
+    padding: 1rem 3rem;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    background-color: blue;
+    color: white;
+}
+
+.card:nth-child(3n+0) .title {
+    background-color: rgb(22, 194, 50);
+}
+
+.card:nth-child(3n-1) .title {
+    background-color: rgb(209, 37, 52);
+}
+
+.card .title h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.4rem;
+}
+
+
+.card .price-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .price-section .tag {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #555;
+    position: relative;
+}
+
+.card .price-section .tag .price {
+    font-size: 6.5rem;
+    font-weight: 800;
+    color: #555;
+}
+
+.card .price-section .tag .tenure {
+    position: absolute;
+    top: 70%;
+    left: 36%;
+}
+
+.offers-section {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.offers-section div {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #a6a5a5;
+}
+
+.offers-section p {
+    font-size: 1.5rem;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.offers-section p i {
+    font-weight: 600;
+    position: absolute;
+    top: 10%;
+    left: -13%;
+}
+
+.card .btn-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card .btn-section .enrolled-btn {
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+/* states  */
+.card .btn-section .enrolled-btn:hover {
+    background-color: rgb(24, 24, 173);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+}
+
+
+
+.card:nth-child(3n+0) .btn-section .enrolled-btn {
+    background-color: rgb(22, 194, 50);
+}
+
+.card:nth-child(3n+0) .btn-section .enrolled-btn:hover {
+    background-color: rgb(24, 138, 43);
+}
+
+.card:nth-child(3n-1) .btn-section .enrolled-btn {
+    background-color: rgb(209, 37, 52);
+}
+
+.card:nth-child(3n-1) .btn-section .enrolled-btn:hover {
+    background-color: rgb(167, 18, 30);
+}
+
+
+@media (width <=1115px) {
+    .grid-3--cols {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (width <=705px) {
+    html {
+        font-size: 55%;
+    }
+
+    .grid-3--cols {
+        grid-template-columns: 1fr;
+
+    }
+}

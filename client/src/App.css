@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* base rule  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+
+
+.container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 10rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+li,
+a,
+label {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color: var(--para-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+}
+
+.section-common-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.section-common-subheading {
+  color: var(--heading-color);
+}
+
+.section-common--title {
+  font-size: 2rem;
+  margin: 2.4rem 0 1.2rem 0;
+}
+
+/* theme */
+
+:root {
+  --menu-color: #26bee9;
+  --btn-bg-color: #2156ca;
+  --mobile-menu-color: #34b2d5;
+  --menu-link-color: #ffffff;
+  --menu-hover-color: #424242;
+  --supporting-color: #ebf3fe;
+  --bg-color: #bfd0da;
+  --heading-color: #000a19;
+  --hero-heading-color: #003b99;
+  --white-color: #ffffff;
+  --para-color: #504e4d;
+  --bnt-hover-bg-color: #003b99;
+  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --footer-bg-color: #040d12;
+}
+
+
+
+.button {
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.5rem;
+  background-color: var(--btn-bg-color);
+  color: var(--white-color);
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+/* states  */
+
+.button:hover {
+  background-color: var(--bnt-hover-bg-color);
+  color: var(--white-color);
+  cursor: pointer;
+  box-shadow: var(--btn-box-shadow);
+}
+
+/* ============= page Not FOunt ============== */
+
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pnf-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ============================================ */
